@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "..\\..\\App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n    let count = 0;\n    const incrementCounter = () => count++;\n</script>\n\n<style>\n    .topnav {\n        overflow: hidden;\n        background-color: dodgerblue;\n    }\n\n    .topnav a {\n        float: left;\n        display: block;\n        color: #f2f2f2;\n        text-align: center;\n        padding: 14px 16px;\n        font-size: 17px;\n    }\n\n    p {\n        position: absolute;\n        left: 50%;\n        top: 50%;\n        transform: translate(-50%, 50%);\n    }\n\n    .fab{\n        position: absolute;\n        bottom: 60px;\n        right: 60px;\n    }\n\n    .fab_action{\n        cursor: pointer;\n        position: absolute;\n        bottom: 0;\n        right: 0;\n    }\n\n    .fa-plus{\n        background-color: dodgerblue;\n        border-radius: 50%;\n        color: #fff;\n        padding: 16px;\n    }\n</style>\n\n\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n\n<div class=\"topnav\">\n    <a href=\"#\">\n        <i class=\"fa fa-bars\"></i>\n    </a>\n</div>\n<p>\n    You have pushed the button this many times: { count }\n</p>\n\n<section class=\"fab\" on:click={incrementCounter}>\n    <div class=\"fab_action\">\n        <i class=\"fa fa-plus\"></i>\n    </div>\n</section>"
+  ],
+  "names": [],
+  "mappings": "AAMI,OAAO,4BAAC,CAAC,AACL,QAAQ,CAAE,MAAM,CAChB,gBAAgB,CAAE,UAAU,AAChC,CAAC,AAED,qBAAO,CAAC,CAAC,cAAC,CAAC,AACP,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,OAAO,CACd,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,IAAI,CAAC,IAAI,CAClB,SAAS,CAAE,IAAI,AACnB,CAAC,AAED,CAAC,4BAAC,CAAC,AACC,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAE,GAAG,CACT,GAAG,CAAE,GAAG,CACR,SAAS,CAAE,UAAU,IAAI,CAAC,CAAC,GAAG,CAAC,AACnC,CAAC,AAED,gCAAI,CAAC,AACD,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,AACf,CAAC,AAED,uCAAW,CAAC,AACR,MAAM,CAAE,OAAO,CACf,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,CAAC,CACT,KAAK,CAAE,CAAC,AACZ,CAAC,AAED,oCAAQ,CAAC,AACL,gBAAgB,CAAE,UAAU,CAC5B,aAAa,CAAE,GAAG,CAClB,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,IAAI,AACjB,CAAC"
+}
